@@ -4,7 +4,7 @@
 
 Цикломатската комплексност изнесува 35 - 26 + 2 = 11. Резултатот се добива со примена на формулата E-N+2, каде Е претставува бројот на ребра и N претставува бројот на јазли. 
 
-##Every Branch
+## Every Branch
 -UserIsNull
 -EmailIsNull
 -PasswordIsNull
@@ -13,7 +13,7 @@
 -PasswordWithoutSpecialCharacters
 -PasswordAndEmailNull
 
-##Multiple condition 
+## Multiple condition 
 if (user==null || user.getPassword()==null || user.getEmail()==null)
 
 -UserIsNull - доколку user==null => целиот израз е точен
