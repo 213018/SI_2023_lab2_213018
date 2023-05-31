@@ -5,18 +5,18 @@
 Цикломатската комплексност изнесува 35 - 26 + 2 = 11. Резултатот се добива со примена на формулата E-N+2, каде Е претставува бројот на ребра и N претставува бројот на јазли. 
 
 ## Every Branch
--UserIsNull\n
--EmailIsNull\n
--PasswordIsNull\n
--PasswordIsValid\n
--PasswordHasEmptySpace\n
--PasswordWithoutSpecialCharacters\n
--PasswordAndEmailNull\n
+1. UserIsNull
+1. EmailIsNull
+1. PasswordIsNull
+1. PasswordIsValid
+1. PasswordHasEmptySpace
+1. PasswordWithoutSpecialCharacters
+1. PasswordAndEmailNull
 
 ## Multiple condition 
 if (user==null || user.getPassword()==null || user.getEmail()==null)
 
--UserIsNull - доколку user==null => целиот израз е точен\n
--UserIsValidPasswordIsNull -  доколку user!=null и user.getPassword()==null => целиот израз е точен\n
--UserIsValidPasswordIsValidEmailIsNull - доколку user!= null, user.getPassword()!=null и user.getEmail()==null => целиот израз е точен\n
--AllConditionsAreNotValid - доколку user==null, user.getPassword()==null и user.getEmail()==null => целиот израз е неточен
+1. UserIsNull - доколку user==null => целиот израз е точен
+1. UserIsValidPasswordIsNull -  доколку user!=null и user.getPassword()==null => целиот израз е точен
+1. UserIsValidPasswordIsValidEmailIsNull - доколку user!= null, user.getPassword()!=null и user.getEmail()==null => целиот израз е точен
+1. AllConditionsAreNotValid - доколку user==null, user.getPassword()==null и user.getEmail()==null => целиот израз е неточен
